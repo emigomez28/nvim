@@ -35,4 +35,5 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 
-opt.scrolloff = 8
+opt.scrolloff = 16
+opt.colorcolumn = "100"
