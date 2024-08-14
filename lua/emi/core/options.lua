@@ -1,5 +1,4 @@
 local opt = vim.opt
-
 -- line numbers
 opt.relativenumber = true
 opt.number = true
@@ -36,3 +35,5 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 opt.scrolloff = 16
+
+opt.guicursor = "n-v-i-c:block-Cursor"

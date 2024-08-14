@@ -55,4 +55,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- lsp
 keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 
--- toggleterm
+-- debugger
+
+keymap.set("n", "<leader>dt", ":DapUiToggle<CR>", { noremap = true })
+keymap.set("n", "<leader>db", ":DapToggleBreakpoint<CR>", { noremap = true })
+keymap.set("n", "<leader>dc", ":DapContinue<CR>", { noremap = true })
+keymap.set("n", "<leader>dr", "lua require('dapui').open({reset = true})<CR>", { noremap = true })
