@@ -95,7 +95,8 @@ return packer.startup(function(use)
 	use("akinsho/nvim-toggleterm.lua")
 	-- LaTeX in nvim
 	use("lervag/vimtex")
-
+	-- Debugger for nvim
+	use("mfussenegger/nvim-dap")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
