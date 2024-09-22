@@ -97,6 +97,7 @@ lspconfig["emmet_ls"].setup({
 		"svelte",
 		"python",
 		"golang",
+		"rust",
 	},
 })
 
@@ -132,6 +133,11 @@ lspconfig["gopls"].setup({
 })
 
 lspconfig["clangd"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["rust_analyzer"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
