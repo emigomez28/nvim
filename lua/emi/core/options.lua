@@ -8,6 +8,11 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
+opt.list = true
+opt.listchars = {
+	tab = "··",
+	space = "·",
+}
 
 -- line wrapping
 opt.wrap = false
@@ -24,8 +29,8 @@ opt.background = "dark"
 
 -- backspace
 opt.backspace = "indent,eol,start"
-
 -- clipboard
+
 opt.clipboard:append("unnamedplus")
 
 -- split windows
